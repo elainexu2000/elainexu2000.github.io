@@ -1,1 +1,88 @@
-Contact page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        #contact{
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        #contact:hover{
+            text-decoration-color: black;
+        }
+        .table-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            margin-top: 30px;
+        }
+        table {
+            border-collapse: collapse;
+            margin:50px;
+            margin: 0 auto;
+            width: auto;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            width: auto;
+        }
+
+        th {
+            font-weight: lighter;
+        }
+        thead:first-child{
+            border-bottom: 2px solid white;
+        }
+        th:first-child { 
+            font-weight: bold; 
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Yueyang Xu</div>
+    <div class="navbar">
+        <div class="navbar-element" id="about_me"><a href="../">About Me</a></div>
+        <div class="navbar-element" id="projects"><a href="../projects/">Projects</a></div>
+        <div class="navbar-element" id="contact"><a href="./">Contact</a></div>
+        <div class="navbar-element" id="other"><a href="../other/">Other</a></div>
+    </div>
+    <h1>Contact Information</h1>
+    <div class="table-container">
+        <table>
+            <thead>
+                <th>Contact Form</th>
+                <th>Contact Information</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Email Address</th>
+                    <th>xu.yuey@northeastern.edu</th>
+                </tr>
+                <tr>
+                    <th>Phone Number</th>
+                    <th>(949)878-0517</th>
+                </tr>
+                <tr>
+                    <th>GitHub Repository</th>
+                    <th>@elainexu2000</th>
+                </tr>
+                <tr>
+                    <th>LinkedIn Page</th>
+                    <th>www.linkedin.com/in/<br>elaine-xu-348471241</th>
+                </tr>
+                <tr>
+                    <th>Facebook Page</th>
+                    <th>@yueyangxu</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

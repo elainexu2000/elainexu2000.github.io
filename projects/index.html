@@ -1,1 +1,93 @@
-Projects page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        #projects{
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        #projects:hover{
+            text-decoration-color: black;
+        }
+        .project-description{
+            margin-left: 25px;
+        }
+        h2{
+            font-size: 35px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 25px;
+        }
+        .image-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img{
+            height: 50%;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Yueyang Xu</div>
+    <div class="navbar">
+        <div class="navbar-element" id="about_me"><a href="../">About Me</a></div>
+        <div class="navbar-element" id="projects"><a href="./">Projects</a></div>
+        <div class="navbar-element" id="contact"><a href="../contact/">Contact</a></div>
+        <div class="navbar-element" id="other"><a href="../other/">Other</a></div>
+    </div>
+    <h1>Projects</h1>
+    <h2>Rainbow Six: Siege Randomizer</h2>
+    <div class="project-description">
+        <p>I developed a randomizer for the first person shooter Ranbow Six:Siege. The program randomly generates
+            an operator along with a set of valid loadout. I used an object-oriented approach in the design process for the ease
+            of making future changes in case of new patchs. 
+        </p>
+        <p>This was also my very first experience of integrating backend logics with fronend elements. I am excided to improve the
+            visual effect of the page and add new functionalities with knowledge from this class! 
+        </p>
+        <p>Link to project repository: <u>https://github.com/elainexu2000/siege-randomizer-v1.0</u></p>
+        <p></p>
+        <div class="image-container">
+            <img src="../static/siege-randomizer.png">
+        </div>
+    </div>
+    <h2>Spam Email Detector</h2>
+    <div class="project-description">
+        <p>In the summer of 2023, I developed a spam email detector via prompt engineering with OpenAI's 
+            GPT-3.5 and GPT-3.5-turbo models. During this process, I formulated and fine-tuned GPT prompts, with the goal of
+            generating precise one-word prediction to classify incoming emails into either spam or non-spam groups.</p>
+        <p>I continuously evaluated model performance and optimized the prompts along the way, ensuring consistent improvement in the
+        detector's accuracy and efficiency.</p>
+    </div>
+    <h2>Customer Support Chatbot</h2>
+    <div class="project-description">
+        <p>In early 2023, I developed a customer support chatbot using articles available from the Stripe company website. 
+            This project utilized OpenAI's "text-embedding-ada-002" model for embedding analysis to ensure deep understanding of user
+            queries, and integrated cosine similarity analysis for matching user queries to the most relevant information.
+        </p>
+        <p>Prompt engineering techniques were also employed to continuously improve response quality.</p>
+        <p>Sample prompt: </p>
+        <div class="image-container">
+            <img src="../static/chatbot-prompt.png">
+        </div>
+    </div>
+    <h2>Senior Thesis</h2>
+    <div class="project-description">
+        <p>For my undergraduate senior thesis project, I joined Prof. Jae Hur's lab to research an obesity-related gene for its impact on lipid metabolism. 
+            The lab focused utilized <em>Drosophila Melanogaster</em> (fruit flies) as the model organism. </p>
+        <p>In this process, I managed transgenic fruit fly populations with genetic knockdowns and conducted DNA isolation and RT-qPCR, and 
+            utilized spectrophotometry to quantify triglyceride and protein levels, with data analysis in R and Excel.</p>
+        <div class="image-container">
+            <img src="../static/thesis.png">
+        </div>
+    </div> 
+    
+</body>
+</html>

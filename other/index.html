@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        #other{
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        #other:hover{
+            text-decoration-color: black;
+        }
+        .description{
+            margin-left: 25px;
+        }
+        h2{
+            font-size: 35px;
+            font-weight: bold;
+        }
+        p, span{
+            font-size: 25px;
+        }
+        .image-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+        img{
+            height: 45%;
+            width: 45%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Yueyang Xu</div>
+    <div class="navbar">
+        <div class="navbar-element" id="about_me"><a href="../">About Me</a></div>
+        <div class="navbar-element" id="projects"><a href="../projects/">Projects</a></div>
+        <div class="navbar-element" id="contact"><a href="../contact/">Contact</a></div>
+        <div class="navbar-element" id="other"><a href="./">Other</a></div>
+    </div>
+    <h1>Other information</h1>
+    <h2>Personal Experience</h2>
+    <div class="description">
+        <p>I grew up in Hangzhou, China, and moved to California at age 14. I attended a local public high school, 
+            then followed to pursue a biochem major at Harvey Mudd college (HMC), a liberal arts college with a stem focused
+            curriculum.</p>
+        <span>During my undergraduage years, I had plenty of opportunities to use coding to simplify projects and other tasks. 
+            This experience drove me to further study computer science at Northeastern. 
+        </span>
+        <p>Pictures of my family at my high school and college graduation: </p>
+        
+        <div class="image-container">
+            <img src="../static/uhs-image-2.jpeg">
+            <img src="../static/hmc-image-2.jpeg">
+        </div>
+    </div>
+    <h2>Hobbies</h2>
+    <div class="description">
+        <p>I enjoy jogging and leetcoding in my free time. But most of all, I spent a lot of time getting lost in the 
+            world of video games. </p>
+            <p>My all time favorite game is Rainbow Six: Siege due to the amount of challenges it presents. Honing mechanical skills, 
+                strategic planning and execution, as well as maintaining a calm and collected mindset in the midst of stress and frustration, 
+                have all been crucial lessons that I never expected to learn in the context of video games. 
+            </p>
+            <p>The past few months I have spent almost exclusively on Baldur's Gate 3. Learning about the rules and settings of DnD was 
+                quite the fascinating experience. Currently my friends and I are working on an RNG playthrough, where we use a 
+                random number generator to select dialogue choices. Since it is quite tedious to switch to a different tab every time a
+                choice is pending, I decided to write a randomizer program that can provide in-game overlay. 
+            </p>
+            <div class="image-container">
+                <img src="../static/bg3.jpg">
+            </div>
+    </div>
+</body>
+</html>
+
